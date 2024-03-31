@@ -1,6 +1,7 @@
 import React from "react";
 import useConversation from "../../zustand/useConversation";
 const Conversation = ({ conversation, lastIdx, emoji }) => {
+    //不需要组件之间来回传值 （props），global state
   const { selectedConversation, setSelectedConversation } =
     useConversation();
     // 被选中的底色是蓝色
